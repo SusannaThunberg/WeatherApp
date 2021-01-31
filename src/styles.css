@@ -40,6 +40,8 @@ a:hover {
 
 .forecast {
     padding: 2px;
+    font-size: 10px;
+    text-align: center;
 }
 
 .col {
@@ -103,5 +105,4 @@ a:hover {
 
 .weather {
     padding: 2px;
-    text-align: center;
 }

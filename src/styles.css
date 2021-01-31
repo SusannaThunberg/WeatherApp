@@ -34,6 +34,7 @@ a:hover {
 
 .form-control {
     box-sizing: auto;
+    padding: 5px 5px;
 }
 
 .col {
@@ -42,7 +43,8 @@ a:hover {
 }
 
 .city-form {
-    padding: 5px 3px 0px;
+    padding: 6px 3px 3px 0px;
+    font-size: .875rem;
 }
 
 .col-1 {
@@ -62,6 +64,10 @@ a:hover {
     background-color: #49576d;
     display: inline;
     margin-top: 3px;
+}
+
+.btn-sm {
+    padding: 4px 6px;
 }
 
 .vertical {

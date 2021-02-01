@@ -24,6 +24,7 @@ function formatDate(date) {
 }
 let weekDayTime = document.querySelector("#week-day-time");
 let now = new Date();
+
 weekDayTime.innerHTML = formatDate(now);
 
 
@@ -35,6 +36,7 @@ function showRequestedWeather(response) {
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#humidity").innerHTML = Math.round(response.data.main.humidity);
+
 
     // let icon = (response.data.weather[0].icon);
     // console.log(response.data.weather[0].icon);

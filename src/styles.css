@@ -53,6 +53,10 @@ div::first-letter {
     margin-top: 4px;
 }
 
+.col {
+    width: 60%;
+}
+
 .col-1 {
     width: 7%;
     padding: 1px 10px 10px;

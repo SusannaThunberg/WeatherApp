@@ -1,4 +1,5 @@
-function formatDate(date) {
+function formatDate(timeStamp) {
+    let date = new Date(timeStamp);
     let hours = date.getHours();
     if (hours < 10) {
         hours = `0${hours}`;
@@ -22,11 +23,6 @@ function formatDate(date) {
 
     return `${day}, ${hours}:${minutes}`;
 }
-let weekDayTime = document.querySelector("#week-day-time");
-let now = new Date();
-
-weekDayTime.innerHTML = formatDate(now);
-
 
 function showRequestedWeather(response) {
     console.log(response)
@@ -36,7 +32,7 @@ function showRequestedWeather(response) {
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#humidity").innerHTML = Math.round(response.data.main.humidity);
-
+    document.querySelector("#week-day-time").innerHTML = formatDate(response.data.dt * 1000);
 
     // let icon = (response.data.weather[0].icon);
     // console.log(response.data.weather[0].icon);
@@ -57,7 +53,6 @@ function searchCity(city) {
 function handleSubmit(event) {
     event.preventDefault();
     let city = document.querySelector("#entered-city").value;
-    console.log(city);
     searchCity(city);
 }
 

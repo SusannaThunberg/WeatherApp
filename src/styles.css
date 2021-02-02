@@ -48,18 +48,19 @@ div::first-letter {
     text-align: center;
 }
 
-.col {
-    padding: 5px;
-}
-
 .city-form {
     padding: 6px 3px 3px 0px;
     font-size: .875rem;
 }
 
+#localButton {
+    padding: 4px;
+    margin-top: 9px;
+}
+
 .col-1 {
     width: 7%;
-    padding: 5px 0px;
+    padding: 6px 10px 10px;
 }
 
 .col-2 {

@@ -32,10 +32,18 @@ a:hover {
     text-transform: capitalize;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.temp {
+    padding: 15px 0px;
+}
+
 .temperature {
     font-weight: bolder;
     font-size: 24px;
-    padding-right: 5px;
 }
 
 .form-control {
@@ -96,10 +104,6 @@ a:hover {
 .fa-cloud-sun {
     font-size: 28px;
     color: #49576d;
-}
-
-.time {
-    margin-bottom: 15px;
 }
 
 .day {

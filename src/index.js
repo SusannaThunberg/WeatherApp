@@ -34,11 +34,13 @@ function showRequestedWeather(response) {
     document.querySelector("#humidity").innerHTML = Math.round(response.data.main.humidity);
     document.querySelector("#week-day-time").innerHTML = formatDate(response.data.dt * 1000);
 
-    // let icon = (response.data.weather[0].icon);
-    // console.log(response.data.weather[0].icon);
-    //let iconElement = document.querySelector("#todayIcon");
-    //iconElement.innerHTML = ();
-    // document.getElementById("#todayIcon").src = `http://openweathermap.org/img/wn/10d@2x.png`;
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute(
+        "src",
+        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute(
+        "alt",
+        response.data.weather[0].description);
 
 }
 

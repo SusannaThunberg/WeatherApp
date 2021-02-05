@@ -34,11 +34,10 @@ function showRequestedWeather(response) {
     document.querySelector("#humidity").innerHTML = Math.round(response.data.main.humidity);
     document.querySelector("#week-day-time").innerHTML = formatDate(response.data.dt * 1000);
 
-    let iconElement = document.querySelector("#icon");
-    iconElement.setAttribute(
+    document.querySelector("#icon").setAttribute(
         "src",
         `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-    iconElement.setAttribute(
+    document.querySelector("#icon").setAttribute(
         "alt",
         response.data.weather[0].description);
 

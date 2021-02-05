@@ -38,7 +38,7 @@ img {
 }
 
 .temp {
-    padding: 15px 0px;
+    padding: 22px 0px;
 }
 
 .temperature {
@@ -73,7 +73,10 @@ img {
 
 .col-2 {
     padding: 5px;
-    width: 12%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .city {

@@ -1,6 +1,6 @@
 body {
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    margin-bottom: 200px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #949ba7 100%);
+    margin-bottom: 100px;
 }
 
 .author {
@@ -12,7 +12,7 @@ body {
     margin: 40px auto;
     margin-bottom: 10px;
     font-family: "Raleway", sans-serif;
-    color: #49576d;
+    color: rgb(72, 72, 74);
     background-color: white;
     padding: 25px;
     border: rgba (0, 0, 0, 0.8);
@@ -20,7 +20,7 @@ body {
 }
 
 a {
-    color: #49576d;
+    color: rgb(72, 72, 74);
     text-decoration: none;
 }
 
@@ -87,7 +87,7 @@ img {
 }
 
 .btn {
-    background-color: #49576d;
+    background-color: color: rgb(72, 72, 74);
     display: inline;
     margin-top: 3px;
 }
@@ -97,7 +97,7 @@ img {
 }
 
 .vertical {
-    border-left: 2px solid #49576d;
+    border-left: 2px solid color: rgb(72, 72, 74);
     height: 20px;
     position: relative;
     top: 9px;
@@ -106,7 +106,7 @@ img {
 
 .fa-cloud-sun {
     font-size: 28px;
-    color: #49576d;
+    color: rgb(72, 72, 74);
 }
 
 .day {

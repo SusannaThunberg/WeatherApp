@@ -1,6 +1,6 @@
 body {
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #949ba7 100%);
-    margin-bottom: 100px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #7b7d80 100%);
+    margin-bottom: 150px;
 }
 
 .author {
@@ -92,7 +92,7 @@ img {
 }
 
 .btn {
-    background-color: color: rgb(72, 72, 74);
+    background-color: rgb(72, 72, 74);
     display: inline;
     margin-top: 3px;
 }
@@ -102,7 +102,8 @@ img {
 }
 
 .vertical {
-    border-left: 2px solid color: rgb(72, 72, 74);
+    border-left: 2px solid;
+    color: rgb(72, 72, 74);
     height: 20px;
     position: relative;
     top: 9px;

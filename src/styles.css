@@ -26,6 +26,11 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: #EC6E4C;
+}
+
+a:focus {
+    color: #EC6E4C;
 }
 
 .descr:first-letter {

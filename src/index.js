@@ -33,7 +33,6 @@ function showRequestedWeather(response) {
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#humidity").innerHTML = Math.round(response.data.main.humidity);
     document.querySelector("#week-day-time").innerHTML = formatDate(response.data.dt * 1000);
-
     document.querySelector("#icon").setAttribute(
         "src",
         `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
@@ -80,10 +79,8 @@ function convertToFahrenheit(event) {
     event.preventDefault();
     let temperature = document.querySelector("#temperature");
     let celsius = temperature.innerHTML;
-    console.log(celsius);
     let fahrenheit = Math.round((celsius * 9) / 5 + 32);
-    console.log(fahrenheit);
-    temperature.innerHTML = ` ${fahrenheit} `;
+    document.querySelector("#temperature").innerHTML = ` ${fahrenheit} `;
 }
 
 let fahrenheitTemperature = document.querySelector("#fahrenheit");
@@ -91,13 +88,9 @@ fahrenheitTemperature.addEventListener("click", convertToFahrenheit);
 
 function convertToCelsius(event) {
     event.preventDefault();
-    let temperature = document.querySelector("#temperature");
     let farenheit = temperature.innerHTML;
-    console.log(farenheit);
     let celsius = Math.round(((farenheit) - 32) * (5 / 9));
-    //let celsius = Math.round(((farenheit)−- 32) * 5 / 9);
-    console.log(celsius);
-    temperature.innerHTML = ` ${celsius} `;
+    document.querySelector("#temperature").innerHTML = ` ${celsius} `;
 }
 
 searchCity("Varberg");

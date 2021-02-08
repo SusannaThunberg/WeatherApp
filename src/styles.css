@@ -1,6 +1,6 @@
 body {
     background-image: linear-gradient(135deg, #f5f7fa 0%, #7b7d80 100%);
-    margin-bottom: 150px;
+    margin-bottom: 100%;
 }
 
 .author {
@@ -25,7 +25,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #EC6E4C;
 }
 
@@ -59,7 +59,19 @@ img {
 .forecast {
     padding: 2px;
     font-size: 10px;
+}
+
+.forecast img {
+    padding: 2px;
+    font-size: 10px;
+}
+
+#weatherForecast {
     text-align: center;
+}
+
+h3 {
+    font-size: 10px;
 }
 
 #localButton {

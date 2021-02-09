@@ -100,6 +100,9 @@ function searchPosition(position) {
 
     axios.get(apiUrl).then(showRequestedWeather);
 
+    apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=${unit}&appid=${apiKey}`;
+    axios.get(apiUrl).then(showWeatherForecast);
+
 }
 
 function getCurrentLocation(event) {

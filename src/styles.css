@@ -61,11 +61,6 @@ img {
     font-size: 10px;
 }
 
-.forecast img {
-    padding: 2px;
-    font-size: 10px;
-}
-
 #weatherForecast {
     text-align: center;
 }

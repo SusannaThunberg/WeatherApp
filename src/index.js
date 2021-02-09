@@ -25,7 +25,7 @@ function showRequestedWeather(response) {
     document.querySelector("#week-day-time").innerHTML = formatDate(response.data.dt * 1000);
     document.querySelector("#icon").setAttribute(
         "src",
-        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+        `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     document.querySelector("#icon").setAttribute(
         "alt",
         response.data.weather[0].description);
@@ -58,9 +58,12 @@ function showWeatherForecast(response) {
      <h3>
       ${formatHours(forecast.dt * 1000)}
       </h3>
-      <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
+      <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
       <div class="weather">
-         <strong>${Math.round(forecast.main.temp_max)}</strong>/${Math.round(forecast.main.temp_min)} °C
+         ${Math.round(forecast.main.temp_max)}°C 
+        </div>
+     <div class="weather">
+         ${Math.round(forecast.wind.speed)} m/s
       </div>
     </div>`;
     }

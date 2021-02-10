@@ -15,7 +15,6 @@ function formatDate(timeStamp) {
 }
 
 function showRequestedWeather(response) {
-    console.log(response)
     document.querySelector("#requested-city").innerHTML = response.data.name;
     document.querySelector("#description").innerHTML = (response.data.weather[0].description);
     console.log(response.data.weather[0].description);
@@ -29,7 +28,6 @@ function showRequestedWeather(response) {
     document.querySelector("#icon").setAttribute(
         "alt",
         response.data.weather[0].description);
-    //document.container.style.backgroundImage = "url(`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)";
 
 }
 
@@ -47,7 +45,6 @@ function formatHours(timeStamp) {
 }
 
 function showWeatherForecast(response) {
-    console.log(response.data);
     let forecastElement = document.querySelector("#weatherForecast");
     forecastElement.innerHTML = null;
     let forecast = null;
